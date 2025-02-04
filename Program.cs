@@ -39,6 +39,7 @@ foreach (var x in nums4) { Console.WriteLine(x); }
 var personen = new List<string>() { "Oleksii Bilyi", "Ivana Vilnius", "Sebastian Orban", "Leo Lutschitsch" };
 
 var leute = from num in personen
+            where num.Contains("V")
                select num;
 
-foreach (var x in leute) {  Console.WriteLine(x); }
+foreach (var x in leute) {  Console.WriteLine($"Name: {x}"); }
