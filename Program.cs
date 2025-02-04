@@ -35,3 +35,10 @@ var nums4 = from num in zahlen
             select num;
 
 foreach (var x in nums4) { Console.WriteLine(x); }
+
+var personen = new List<string>() { "Oleksii Bilyi", "Ivana Vilnius", "Sebastian Orban", "Leo Lutschitsch" };
+
+var leute = from num in personen
+               select num;
+
+foreach (var x in leute) {  Console.WriteLine(x); }
